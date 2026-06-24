@@ -18,15 +18,23 @@
     "paths": {
       "@/*": ["./*"],
       "@app/*": ["app/*"],
+      "@brain/*": ["brain/*"],
       "@components/*": ["components/*"],
       "@core/*": ["core/*"],
       "@database/*": ["database/*"],
       "@engines/*": ["engines/*"],
+      "@intent/*": ["intent/*"],
       "@knowledge/*": ["knowledge/*"],
       "@lib/*": ["lib/*"],
       "@memory/*": ["memory/*"],
+      "@memory-manager/*": ["memory-manager/*"],
+      "@planner/*": ["planner/*"],
+      "@reasoning/*": ["reasoning/*"],
+      "@response/*": ["response/*"],
+      "@router/*": ["router/*"],
       "@storage/*": ["storage/*"],
-      "@types/*": ["types/*"]
+      "@types/*": ["types/*"],
+      "@verification/*": ["verification/*"]
     },
     "plugins": [
       {
