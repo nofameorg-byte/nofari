@@ -7,12 +7,15 @@ export interface ResourceRouter {
 export class DefaultResourceRouter implements ResourceRouter {
   async determineResources(
     context: PipelineContext,
-    _plan: ExecutionPlan,
+    plan: ExecutionPlan,
   ): Promise<ResourceRequirement[]> {
     const hasDocuments = context.attachments.some((attachment) => attachment.kind === "document");
     const hasImages = context.attachments.some((attachment) => attachment.kind === "image");
+    const plannedRequirements = new Map(
+      plan.requiredResources.map((resource) => [resource.kind, resource]),
+    );
 
-    return [
+    const defaultRequirements: ResourceRequirement[] = [
       {
         kind: "memory",
         required: false,
@@ -48,5 +51,9 @@ export class DefaultResourceRouter implements ResourceRouter {
         status: hasImages ? "requested" : "not_requested",
       },
     ];
+
+    return defaultRequirements.map(
+      (requirement) => plannedRequirements.get(requirement.kind) ?? requirement,
+    );
   }
 }
