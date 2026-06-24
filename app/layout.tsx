@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NOFARI Intelligence Platform",
-  description: "Permanent foundation for the NOFARI Intelligence Platform.",
+  title: "NOFARI — Built to Think",
+  description: "The NOFARI Intelligence Platform visual identity.",
 };
 
 export default function RootLayout({

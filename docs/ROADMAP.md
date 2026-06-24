@@ -9,15 +9,21 @@ committing to speculative product surfaces.
 - Establish root folder architecture and path aliases.
 - Document pgvector as planned infrastructure without implementing vector features.
 
-## Sprint 002: First Contracts
+## Sprint 002: Identity
+
+- Establish the permanent NOFARI dark luxury visual identity.
+- Build reusable UI primitives in `components/ui`.
+- Replace the foundation homepage with a single centered conversation-first experience.
+- Keep the sprint UI-only with no backend behavior, mock AI, uploads, authentication, or persistence.
+
+## Sprint 003: Product Contracts
 
 Recommended next work:
 
-- Define the first domain contracts in `core` before adding UI or persistence behavior.
-- Decide the initial authentication and authorization posture.
-- Create the first real database models only after durable domain entities are agreed.
-- Introduce reusable component primitives if a real interface workflow requires them.
-- Add test strategy and CI commands once the first behavior-bearing code exists.
+- Define the first real product and domain contracts before adding backend implementation.
+- Decide which Sprint 002 UI primitives become part of real user workflows.
+- Introduce behavior only when it has a durable owner, verification strategy, and documentation.
+- Keep authentication, data modeling, upload handling, and intelligence logic separated by boundary.
 
 ## Later Foundation Extensions
 

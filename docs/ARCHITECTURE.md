@@ -6,7 +6,7 @@ introducing product features.
 ## Root Folders
 
 - `app` - Next.js App Router entrypoints, layouts, pages, and route-level styles.
-- `components` - Shared React UI components once reusable interface elements are introduced.
+- `components` - Shared React UI components, including the reusable `components/ui` design system.
 - `core` - Platform-level domain rules, application services, and cross-cutting orchestration.
 - `engines` - Intelligence engines and processing pipelines once their contracts are defined.
 - `memory` - Memory abstractions and retrieval workflows planned for future sprints.
@@ -28,5 +28,6 @@ or services rather than spreading persistence code across the application.
 
 ## Current Scope
 
-Sprint 001 establishes the architecture shell. Sprint 002 can begin adding domain contracts and
-implementation details inside these boundaries.
+Sprint 001 established the architecture shell. Sprint 002 adds UI-only identity primitives in
+`components/ui`. Domain contracts, backend behavior, persistence, uploads, authentication, and
+intelligence logic remain future work.
