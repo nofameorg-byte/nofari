@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
@@ -16,17 +20,39 @@
     "baseUrl": ".",
     "ignoreDeprecations": "6.0",
     "paths": {
-      "@/*": ["./*"],
-      "@app/*": ["app/*"],
-      "@components/*": ["components/*"],
-      "@core/*": ["core/*"],
-      "@database/*": ["database/*"],
-      "@engines/*": ["engines/*"],
-      "@knowledge/*": ["knowledge/*"],
-      "@lib/*": ["lib/*"],
-      "@memory/*": ["memory/*"],
-      "@storage/*": ["storage/*"],
-      "@types/*": ["types/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@app/*": [
+        "app/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@core/*": [
+        "core/*"
+      ],
+      "@database/*": [
+        "database/*"
+      ],
+      "@engines/*": [
+        "engines/*"
+      ],
+      "@knowledge/*": [
+        "knowledge/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@memory/*": [
+        "memory/*"
+      ],
+      "@storage/*": [
+        "storage/*"
+      ],
+      "@types/*": [
+        "types/*"
+      ]
     },
     "plugins": [
       {
@@ -40,7 +66,10 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "next.config.ts",
-    "prisma.config.ts"
+    "prisma.config.ts",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
