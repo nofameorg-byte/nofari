@@ -1,0 +1,57 @@
+{
+  "name": "nofari",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NOFARI Intelligence Platform foundation.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nofameorg-byte/nofari.git"
+  },
+  "keywords": [
+    "intelligence-platform",
+    "nextjs",
+    "prisma"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": ">=10.9.7"
+  },
+  "bugs": {
+    "url": "https://github.com/nofameorg-byte/nofari/issues"
+  },
+  "homepage": "https://github.com/nofameorg-byte/nofari#readme",
+  "dependencies": {
+    "@prisma/client": "^7.8.0",
+    "dotenv": "^17.4.2",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.9",
+    "postcss": "^8.5.15",
+    "prettier": "^3.8.4",
+    "prisma": "^7.8.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3"
+  }
+}
