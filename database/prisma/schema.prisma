@@ -1,0 +1,11 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Sprint 001 intentionally defines no application models.
+// pgvector is planned as a PostgreSQL extension in a future migration when vector-backed memory
+// and retrieval requirements are specified.
